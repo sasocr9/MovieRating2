@@ -298,7 +298,7 @@ function MovieDetail({ selectedId, onCloseMovie, onAddWatched, watched }) {
                 <>
                   <StarRating
                     maxRating={10}
-                    size={24}
+                    size={30}
                     onSetRating={setUserRating}
                   />
                   {userRating > 0 && (
