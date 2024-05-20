@@ -293,12 +293,10 @@ function MovieDetail({ selectedId, onCloseMovie, onAddWatched, watched }) {
 }
 
 function WatchedSummary({ watched }) {
-  const avgImdbRating = Math.round(
-    average(watched.map((movie) => movie.imdbRating))*100
-  )/100;
-  const avgUserRating = Math.round(
-    average(watched.map((movie) => movie.userRating))*100
-  )/100;
+  const avgImdbRating =
+    Math.round(average(watched.map((movie) => movie.imdbRating)) * 100) / 100;
+  const avgUserRating =
+    Math.round(average(watched.map((movie) => movie.userRating)) * 100) / 100;
   const avgRuntime = Math.round(average(watched.map((movie) => movie.runtime)));
 
   return (
