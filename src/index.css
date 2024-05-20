@@ -219,7 +219,7 @@ body {
 
 .summary h2 {
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin-bottom: 0.6rem;
 }
 
@@ -227,7 +227,7 @@ body {
   display: flex;
   align-items: center;
   gap: 2.4rem;
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -369,7 +369,7 @@ body {
   }
   .summary h2 {
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 0.6rem;
   }
   .summary div {
