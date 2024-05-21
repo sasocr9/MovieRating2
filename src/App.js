@@ -3,6 +3,7 @@ import StarRating from "./StarRating";
 import { useMovies } from "./useMovies";
 import { useLocalStorageState } from "./useLocalStorageState";
 import { useKey } from "./useKey";
+import { useMediaQuery } from "./useMediaQuery";
 
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
@@ -234,6 +235,9 @@ function MovieDetail({ selectedId, onCloseMovie, onAddWatched, watched }) {
     };
   }, [title]);
 
+  const isSmallScreen = useMediaQuery("(max-width: 600px)");
+  const starRatingSize = isSmallScreen ? 15 : 30;
+
   return (
     <div className="details">
       {isLoading ? (
@@ -263,7 +267,7 @@ function MovieDetail({ selectedId, onCloseMovie, onAddWatched, watched }) {
                 <>
                   <StarRating
                     maxRating={10}
-                    size={30}
+                    size={starRatingSize}
                     onSetRating={setUserRating}
                   />
                   {userRating > 0 && (
