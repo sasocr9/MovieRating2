@@ -236,7 +236,7 @@ function MovieDetail({ selectedId, onCloseMovie, onAddWatched, watched }) {
   }, [title]);
 
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
-  const starRatingSize = isSmallScreen ? 15 : 30;
+  const starRatingSize = isSmallScreen ? 20 : 30;
 
   return (
     <div className="details">
